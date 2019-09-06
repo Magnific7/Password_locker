@@ -1,4 +1,3 @@
-import pyperclip
 import random
 import string
 
@@ -60,11 +59,11 @@ class Credential:
             '''
             gen_pw = ''.join(random.choice(char) for _ in range(size)) 
             return gen_pw
-
+# _
         @classmethod
         def show_credentials(cls,user_name):
             '''
-            Method to show thelit of credentials saved
+            Function to show thelit of credentials saved
             '''
             user_info_list = []
             for credential in cls.credentials_list:
