@@ -11,3 +11,4 @@ As a user I would like:
 * Generate a password for a new credential/account
 
 ## Specifications
+| Behaviour | Input | Output |
