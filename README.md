@@ -9,3 +9,5 @@ As a user I would like:
 * To create an account with my details - log in and password
 * Store my existing login credentials
 * Generate a password for a new credential/account
+
+## Specifications
