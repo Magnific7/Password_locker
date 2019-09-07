@@ -6,3 +6,4 @@ Password Locker is a terminal run python application that allows users to store 
 These are the behaviours/features that the application implements for use by a user.
 
 As a user I would like:
+* To create an account with my details - log in and password
