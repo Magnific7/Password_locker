@@ -12,3 +12,4 @@ As a user I would like:
 
 ## Specifications
 | Behaviour | Input | Output |
+| :---------------- | :---------------: | ------------------: |
