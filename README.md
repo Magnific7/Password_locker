@@ -23,3 +23,6 @@ Welcome, choose an option: ca-Create Account, li-Log In, ex-Exit |
 | Exit application | **Enter: ex** | Exit the current navigation stage |
 ## SetUp / Installation Requirements
 ### Prerequisites
+* python3.6
+### Cloning
+* In your terminal:
