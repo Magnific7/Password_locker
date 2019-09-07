@@ -9,11 +9,11 @@ def create_user(fname,lname,pword):
     new_user = User(fname,lname,pword)
     return new_user
 
-def save_user(self):
+def save_user(user):
     '''
     Function to save a new user account
     '''
-    User.save_user()
+    User.save_user(user)
 
 def verify_user(fname,pword):
     '''
@@ -98,8 +98,8 @@ def main():
 					elif short_code == 'cc':
 						print(' ')
 						print('Enter your credential details:')
-						email = input('Enter the site\'s name- ').strip()
-						account_name = input('Enter your account\'s name - ').strip()
+						email = input('Enter your email.- ').strip()
+						account_name = input('Enter your site\'s name - ').strip()
 						while True:
 							print(' ')
 							print("-"*60)

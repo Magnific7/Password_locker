@@ -40,7 +40,7 @@ class Credential:
 
         def __init__(self,account_name,user_name,email,pword):
             '''
-            Function toshow the details each user should have.
+            Function to show the details each user should have.
             '''
             self.account_name = account_name
             self.user_name = user_name
