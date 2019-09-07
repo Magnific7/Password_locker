@@ -24,5 +24,7 @@ Welcome, choose an option: ca-Create Account, li-Log In, ex-Exit |
 ## SetUp / Installation Requirements
 ### Prerequisites
 * python3.6
-### Cloning
-* In your terminal:
+### Assessing
+* you need to clone the folder in your terminal
+## Technologies Used
+* Python3.6
