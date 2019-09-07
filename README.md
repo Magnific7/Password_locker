@@ -28,3 +28,5 @@ Welcome, choose an option: ca-Create Account, li-Log In, ex-Exit |
 * you need to clone the folder in your terminal
 ## Technologies Used
 * Python3.6
+## License
+By me 2019
