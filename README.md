@@ -20,3 +20,4 @@ Welcome, choose an option: ca-Create Account, li-Log In, ex-Exit |
 | Display codes for navigation | **Successful login** | Choose an option: cc - Create Credential, dc - Display Credentials, copy - Copy Credential, ex - exit |
 | Display prompt for creating a credential | **Enter: cc** | Enter the site name, your username and password |
 | Display a list of credentials | **Enter: dc** | Prints a list of saved credentials |
+| Exit application | **Enter: ex** | Exit the current navigation stage |
