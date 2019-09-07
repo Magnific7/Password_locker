@@ -7,3 +7,4 @@ These are the behaviours/features that the application implements for use by a u
 
 As a user I would like:
 * To create an account with my details - log in and password
+* Store my existing login credentials
