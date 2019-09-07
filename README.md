@@ -13,3 +13,4 @@ As a user I would like:
 ## Specifications
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
+| Display codes for navigation | **In terminal: $./password_locker.py** | 
