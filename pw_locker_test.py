@@ -112,7 +112,22 @@ class TestCredential(unittest.TestCase):
         instagram = Credential('Instagram','Mag','mag@instagram.com','SGhhn20m')
         instagram.save_credentials()
         credential_exists = Credential.find_account_info('Instagram')
-        self.assertEqual(credential_exists,instagram)                
+        self.assertEqual(credential_exists,instagram)
+
+    def test_copy_credential(self):
+		'''
+		Test to check if the copy a credential method copies the correct credential
+		'''
+		self.new_credential.save_credentials()
+		instagram = Credential('Instagram','Mag','mag@instagram.com','SGhhn20m')
+		instagram.save_credentials()
+		find_credential = None
+		for credential in Credential.user_credentials_list:
+				find_credential =Credential.find_account_info(credential.account_name)
+				return pyperclip.copy(find_credential.pword)
+		Credential.copy_credential(self.new_credential.account_name)
+		self.assertEqual('SGhhn20m',pyperclip.paste())
+		print(pyperclip.paste())                    
     
 
 if __name__ == '__main__':

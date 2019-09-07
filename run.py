@@ -1,4 +1,5 @@
 #!/usr/bin/env python3.6
+import pyperclip
 from user_credential import User
 from user_credential import Credential
 
@@ -88,7 +89,7 @@ def main():
 				print(' ')
 				while True:
 					print("-"*60)
-					print('Navigation codes: \n cc-Create a Credential \n dc-show Credentials \n copy-Copy Password \n ex-Exit')
+					print('Navigation codes: \n cc-Create a Credential \n dc-show Credentials \n ex-Exit')
 					short_code = input('Enter a choice: ').lower().strip()
 					print("-"*60)
 					if short_code == 'ex':
@@ -133,17 +134,17 @@ def main():
 							print(' ')
 							print("You don't seem to have any credentials saved yet")
 							print(' ')
-					elif short_code == 'copy':
-						print(' ')
-						chosen_site = input('Enter the site name for the credential password to copy: ')
-						copy_credential(chosen_site)
-						print('')
+					# elif short_code == 'copy':
+					# 	print(' ')
+					# 	chosen_site = input('Enter the site name for the credential password to copy: ')
+					# 	copy_credential(chosen_site)
+					# 	print('')
 					else:
 						print('Oops! Wrong option entered. Try again.')
 
-			else: 
-				print(' ')
-				print('Oops! Wrong details entered. Try again or Create an Account.')		
+			# else: 
+			# 	print(' ')
+			# 	print('Oops! Wrong details entered. Try again or Create an Account.')		
 		
 		else:
 			print("-"*60)
