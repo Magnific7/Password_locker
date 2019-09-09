@@ -73,6 +73,12 @@ class Credential:
 
             return cls.credentials_list  
 
+        def delete_credential(self):
+            '''
+            a method to delete a credential.
+            '''
+            Credential.credentials_list.remove(self)    
+
         # @classmethod
         # def find_account_info(cls,account_name):
         #     '''

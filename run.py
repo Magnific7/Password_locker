@@ -42,6 +42,12 @@ def save_credential(credential):
 	Function to save a newly created credential
 	'''
 	Credential.save_credentials(credential)
+	
+def delete_credential(credential):
+	'''
+	Deleting a credential.
+	'''
+	Credential.delete_credential(credential)	
 
 def show_credentials():
 	'''
@@ -89,7 +95,7 @@ def main():
 				print(' ')
 				while True:
 					print("-"*60)
-					print('Navigation codes: \n cc-Create a Credential \n dc-show Credentials \n ex-Exit')
+					print('Navigation codes: \n cc-Create a Credential \n dc-show Credentials \n ex-Exit \n del-delete credential')
 					short_code = input('Enter a choice: ').lower().strip()
 					print("-"*60)
 					if short_code == 'ex':
@@ -135,7 +141,16 @@ def main():
 							print("You don't seem to have any credentials saved yet")
 							print(' ')
 
-					# elif short_code == 'copy':
+					elif short_code == 'del':
+						print("Enter the name of the site you want to delete the credentials.")
+						name_del = input( '_')
+						# if show_credentials():
+						# 	deleting = show_credentials()
+						# 	print( "_"*50)
+						# 	deleting.delete_credential()
+							# for credential in show_credentials(name_del):
+							# 	credential.delete_credential()
+						print(f'{name_del} has been deleted')		
 					# 	print(' ')
 					# 	chosen_site = input('Enter the site name for the credential password to copy: ')
 					# 	copy_credential(chosen_site)
