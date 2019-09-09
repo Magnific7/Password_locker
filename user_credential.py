@@ -62,25 +62,25 @@ class Credential:
             return gen_pw
 # _
         @classmethod
-        def show_credentials(cls,user_name):
+        def show_credentials(cls):
             '''
-            Function to show thelit of credentials saved
+            Function to show the list of credentials saved
             '''
-            user_info_list = []
-            for credential in cls.credentials_list:
-                if credential.user_name == user_name:
-                    user_info_list.append(credential)
+            # # user_info_list = []
+            # for credential in cls.credentials_list:
+            #     if credential.email == email:
+            #         credentials_list.append(credential)
 
-            return user_info_list  
+            return cls.credentials_list  
 
-        @classmethod
-        def find_account_info(cls,account_name):
-            '''
-            Method that helps user get account information.
-            '''
-            for credential in cls.credentials_list:
-                if credential.account_name == account_name:
-                    return credential
+        # @classmethod
+        # def find_account_info(cls,account_name):
+        #     '''
+        #     Method that helps user get account information.
+        #     '''
+        #     for credential in cls.credentials_list:
+        #         if credential.account_name == account_name:
+        #             return credential
 
         # @classmethod
         # def copy_credentials(cls,account_name):

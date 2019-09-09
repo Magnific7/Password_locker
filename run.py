@@ -43,17 +43,17 @@ def save_credential(credential):
 	'''
 	Credential.save_credentials(credential)
 
-def show_credentials(user_name):
+def show_credentials():
 	'''
 	Function to show credentials saved by a user
 	'''
-	return Credential.show_credentials(user_name)
+	return Credential.show_credentials()
 	
-def copy_credential(email):
-	'''
-	Function to copy a credentials details to the clipboard
-	'''
-	return Credential.copy_credential(email)
+# def copy_credential(email):
+# 	'''
+# 	Function to copy a credentials details to the clipboard
+# 	'''
+# 	return Credential.copy_credential(email)
 
 def main():
 	print(' ')
@@ -124,16 +124,17 @@ def main():
 						print(' ')
 					elif short_code == 'dc':
 						print(' ')
-						if show_credentials(user_name):
+						if show_credentials():
 							print('Here is a list of all your credentials')
 							print(' ')
-							for credential in show_credentials(user_name):
+							for credential in show_credentials():
 								print(f'user Name: {credential.email} - Account Name: {credential.account_name} - Password: {credential.pword}')
 							print(' ')	
 						else:
 							print(' ')
 							print("You don't seem to have any credentials saved yet")
 							print(' ')
+
 					# elif short_code == 'copy':
 					# 	print(' ')
 					# 	chosen_site = input('Enter the site name for the credential password to copy: ')
