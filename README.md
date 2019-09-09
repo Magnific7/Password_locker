@@ -30,4 +30,4 @@ Welcome, choose an option: ca-Create Account, li-Log In, ex-Exit |
 ## Technologies Used
 * Python3.6
 ## License
-By me 2019
+By UM Magnific 2019
