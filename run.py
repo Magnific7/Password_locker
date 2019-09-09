@@ -99,8 +99,8 @@ def main():
 					elif short_code == 'cc':
 						print(' ')
 						print('Enter your credential details:')
-						email = input('Enter your email.- ').strip()
-						account_name = input('Enter your site\'s name - ').strip()
+						email = input('Enter your user name.- ').strip()
+						account_name = input('Enter the site\'s name - ').strip()
 						while True:
 							print(' ')
 							print("-"*60)
@@ -120,7 +120,7 @@ def main():
 								print('Oops! Wrong option entered. Try again.')
 						save_credential(create_credential(user_name,email,account_name,pword))
 						print(' ')
-						print(f'Credential Created: Site Name: {email} - Account Name: {account_name} - Password: {pword}')
+						print(f'Credential Created: user Name: {email} - Account Name: {account_name} - Password: {pword}')
 						print(' ')
 					elif short_code == 'dc':
 						print(' ')
@@ -128,7 +128,7 @@ def main():
 							print('Here is a list of all your credentials')
 							print(' ')
 							for credential in show_credentials(user_name):
-								print(f'Site Name: {credential.email} - Account Name: {credential.account_name} - Password: {credential.pword}')
+								print(f'user Name: {credential.email} - Account Name: {credential.account_name} - Password: {credential.pword}')
 							print(' ')	
 						else:
 							print(' ')
